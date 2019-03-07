@@ -22,7 +22,7 @@ stage('Apply docker tag ') {
 sh "docker tag devopsexams:latest ccheroly/ccheroly:latest"
 }
  stage('push the image') {
-sh "docker push ccheroly/ccheroly:latest"
+sh "docker push ccheroly/devopsexams:latest"
 }
 stage('Apply changes to the environment') {
 sh "ls -l"
